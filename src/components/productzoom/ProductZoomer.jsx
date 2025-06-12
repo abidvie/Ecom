@@ -77,19 +77,18 @@ function ProductZoomer() {
     "/assets/productimg/product1.2.webp",
     "/assets/productimg/product1.3.webp",
     "/assets/productimg/product1.4.webp",
-     "/assets/productimg/product1.4.webp",
-    "/assets/productimg/product1.4.webp",
-     "/assets/productimg/product1.4.webp",
-     "/assets/productimg/product1.4.webp",
+    
+  
+     
      
   ];
 
   return (
     <div className="flex gap-3">
-      <div className="slideer bg-amber-300 w-[15%] h-[500px] overflow-hidden">
+      <div className="slideer w-[15%] h-[500px] overflow-hidden">
         <Swiper
           slidesPerView={5}
-          spaceBetween={20}
+          spaceBetween={25}
           direction={"vertical"}
           modules={[Pagination, Navigation]}
           className="zoomproductsliderthumbs h-full"
@@ -99,7 +98,12 @@ function ProductZoomer() {
               <img
                 src={img}
                 onClick={() => setSelectedImage(img)}
-                className="cursor-pointer h-[80px] object-cover border-2 hover:border-black transition"
+                // className="cursor-pointer h-[80px] object-cover border-2 hover:border-black transition }"
+                   className={`cursor-pointer h-[80px] object-cover border-2 transition duration-200 ${
+      selectedImage === img
+        ? "opacity-100 border-black"
+        : "opacity-50 hover:opacity-80"
+    }`}
               />
             </SwiperSlide>
           ))}

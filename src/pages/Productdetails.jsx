@@ -5,7 +5,7 @@ function Productdetails() {
   return (
    <>
    <div className="container flex gap-3 ">
-    <div className="productxoomercontainer w-[30%] bg-red-600 p-1.5 h-[55vh] overflow-hidden">
+    <div className="productxoomercontainer w-[30%] p-1.5 h-[55vh] overflow-hidden">
       <ProductZoomer/>
     </div>
    </div>
