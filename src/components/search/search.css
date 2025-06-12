@@ -1,0 +1,28 @@
+.searchbox{
+    padding: 5px;
+    
+    color:black;
+   text-align: center;
+   background-color: rgb(229, 219, 219);
+    display: flex;
+    justify-items: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+
+   
+}
+.searchbox input {
+ 
+  outline: none;
+  
+}
+
+.search-icon {
+  border-radius: 50%;
+ padding: 5px;
+  transition: background-color 0.8s ease;
+}
+
+.search-icon:hover {
+  background-color: #d3caca; /* Change to your preferred hover color */
+}
+

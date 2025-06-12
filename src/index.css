@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+body{
+    padding: 2px;
+     font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  overflow-x: hidden;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+header .top-strip{
+    border-top: 3px solid rgba(172, 12, 12, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.primarycolor{
+   /* background: #ff5252;  */
+   background-color: aqua;
+} 
+.backgroundcolor{
+    
+}
+
+
+.link:hover {
+    color: rgb(211, 83, 83);
+     transition: color 0.3s ease; /* Color change on hover */
+}
+.sliderhome{
+  overflow: inherit !important;
+}
+.smoothing:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+
+}
+.MuiTab-textColorPrimary{color: rgb(35, 213, 133) !important;
+    
+}
+
+.MuiCheckbox-root{
+    margin-right: -2px !important ;
+    padding: 3px !important;
+}
+.MuiFormControlLabel-root{
+    margin-left: 2px !important;
+}
+.swiper-slide{
+    height: 60px !important;
+}

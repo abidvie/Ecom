@@ -1,0 +1,17 @@
+.sidebaritem{
+    max-height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: aqua;
+}
+.sidebaritem::-webkit-scrollbar{
+    width: 6px !important;
+    height: 5px !important;
+}
+.sidebaritem::-webkit-scrollbar-thumb{
+    background:rgb(17, 209, 97) !important;
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}

@@ -1,0 +1,21 @@
+.shop_cat_btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f1f1f1; /* Light background */
+    color: hsl(0, 0%, 20%); /* Dark text */
+    font-size: 10px; /* Adjust font size */
+    border: 2px solid #ccc; /* Border around button */
+    padding: 10px 20px; /* Padding around text */
+    text-transform: uppercase; /* Make the text uppercase */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.shop_cat_btn:hover {
+    background-color: #d87a0e; /* Green background on hover */
+    color: white; /* White text on hover */
+    border-color: #d78c14; /* Matching border color */
+}
