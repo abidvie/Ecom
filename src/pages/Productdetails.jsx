@@ -3,7 +3,10 @@ import ProductZoomer from "../components/productzoom/ProductZoomer";
 import Rating from "@mui/material/Rating";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import { FaCartArrowDown } from "react-icons/fa";
+import Productreview from "../components/productreview/Productreview";
 function Productdetails() {
+  const [qty, setqty] = useState("1");
   const [sizebg, setsizebg] = useState("");
   return (
     <>
@@ -67,10 +70,29 @@ function Productdetails() {
                 <Button onClick={() => setsizebg("4")}>XL</Button>
               </div>
             </div>
-            
+
+            <div className="quantitysection mt-4">
+              <label className="mr-2 font-semibold">Quantity:</label>
+              <input
+                type="number"
+                min="1"
+                value={qty}
+                onChange={(e) => setqty(e.target.value)}
+                className="border px-2 py-1 w-20 rounded"
+              />
+              <p className="mt-2 text-sm text-gray-600">
+                Selected Quantity: {qty}
+              </p>
+              <Button>Add to cart<FaCartArrowDown/></Button>
+            </div>
           </div>
         </div>
+
+     
       </div>
+         <section className="reviewsection">
+             <Productreview/>
+        </section>
     </>
   );
 }
