@@ -12,10 +12,12 @@ import Blog from "../components/blog/Blog";
 
 export default function Home() {
   return (
+    <>
+    <Smallslider />
+      <Cathomeslider />
     <div>
       home page
-      <Smallslider />
-      <Cathomeslider />
+      
       <section className="mt-4">
         <div className="container ">
           <div className="flex items-center justify-between">
@@ -64,5 +66,6 @@ export default function Home() {
       <br />
       <br />
     </div>
+    </>
   );
 }

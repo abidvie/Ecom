@@ -48,6 +48,14 @@ header .top-strip{
 .MuiFormControlLabel-root{
     margin-left: 2px !important;
 }
-.swiper-slide{
-    height: 60px !important;
+
+.MuiStack-root .MuiRating-root{
+    font-size: 17px;
+} 
+.MuiButtonBase-root.MuiButton-root{
+    letter-spacing: 0.25rem;
+    line-height: 1.89px;
+        min-width: 50px;
+        font-size: -0.125rem;
+            margin: -5px
 }
