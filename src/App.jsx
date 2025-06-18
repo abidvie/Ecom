@@ -8,8 +8,10 @@ import Footer from './components/foooter/Footer'
 import Productlisting from './pages/Productlisting '
 import Productdetails from './pages/Productdetails'
 import Login from './pages/Login'
+// import CartPage from './pages/CartPage'
+
 import CartPage from './pages/CartPage'
-import OtpPage from './components/otppage/OtpPage'
+import OtpPage from './pages/OtpPage'
 
 function App() {
 
