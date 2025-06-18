@@ -24,7 +24,7 @@ export default function Navigation() {
             <Link to={'/'} className='link transition'>home</Link>
           </li>
            <li className='list-none relative group'>
-            <Link to={'/'} className='link transition relative'>Fasion</Link>
+            <Link to={'/Productlisting'} className='link transition relative'>Fasion</Link>
             <div className='hidden group-hover:block absolute bg-white shadow-md min-w-[200px] z-10 p-[10px]'>
               <ul>
                 <li onClick={()=>{console.log("hover men")}} className='list-none '>men </li>

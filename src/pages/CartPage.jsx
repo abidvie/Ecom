@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([
@@ -101,7 +102,7 @@ const CartPage = () => {
               <span>${total.toFixed(2)}</span>
             </div>
             <button className="mt-6 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition disabled:opacity-50" disabled={cartItems.length === 0}>
-              Proceed to Checkout
+             <Link to={'/billingdetails'}> Proceed to Checkout</Link>
             </button>
           </div>
         </div>
