@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Search from "../search/Search";
 import Navigation from "../navigation/Navigation";
+import Cartdrawer from "../cart/Cartdrawer";
 
 export default function Header() {
   return (
@@ -42,10 +43,12 @@ export default function Header() {
           <div className="col2 w-[45%] ">
             <Search/>
           </div>
-          <div className="col3 w-[30%] pl-5 ">
+          <div className="col3 w-[30%] pl-5 flex bg-amber-400 gap-3.5">
          
-                <Link to={'/login'} className="link">Login</Link> / <Link className="link" to={'/register'}>Register</Link>
-         
+                <Link to={'/login'} className="link">Login</Link> 
+                <Link className="link" to={'/register'}>Register</Link>
+                <Cartdrawer/>
+           
           </div>
         </div>
       </header>
