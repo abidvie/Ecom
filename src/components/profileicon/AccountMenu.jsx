@@ -12,16 +12,20 @@ import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { logout } from '../../store/slices/Loginslice';
 
 export default function AccountMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
+  const logoutdispatch=useDispatch();
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
     setAnchorEl(null);
   };
+
   return (
     <React.Fragment>
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
@@ -81,7 +85,7 @@ export default function AccountMenu() {
         <MenuItem onClick={handleClose}>
           <Avatar /> Profile
         </MenuItem>
-        <Link to={'/myaccount'}>
+        <Link to={'/myprofile'}>
          <MenuItem onClick={handleClose}>
           <Avatar /> My account
         </MenuItem>
@@ -104,7 +108,7 @@ export default function AccountMenu() {
           <ListItemIcon>
             <Logout fontSize="small" />
           </ListItemIcon>
-          Logout
+          <span onClick={()=>{logoutdispatch(logout())}}>Log out</span>
         </MenuItem>
       </Menu>
     </React.Fragment>

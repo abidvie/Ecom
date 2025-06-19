@@ -61,7 +61,7 @@ export default function Header() {
                 <h4 className="text-[16px] font-bold">ABid Sarker</h4>
                 <span className="text-[12px] font-[500]">sarkerdipto2055@gmail.com</span>
               </div>
-            </div>) : <div><Link>Log in</Link></div>}</div>
+            </div>) : <div><Link to={'/login'}>Log in</Link></div>}</div>
             <Link className="link" to={"/register"}>
               Register
             </Link>

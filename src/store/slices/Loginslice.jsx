@@ -11,13 +11,13 @@ const Loginslice = createSlice({
   initialState,
   reducers: {
     setLogin: (state, action) => {
-      state.isLoggedIn = action.payload;
+      state.isloggedin = action.payload;
     },
     toggleLogin: (state) => {
-      state.isLoggedIn = !state.isLoggedIn;
+      state.isloggedin = !state.isloggedin;
     },
     logout: (state) => {
-      state.isLoggedIn = false;
+      state.isloggedin = false;
     },
   },
 });

@@ -16,6 +16,8 @@ import BillingDetailsPage from './pages/BillingDetailsPage'
 import { Provider } from 'react-redux';
 import Store from './store/Store'
 import MyAccount from './pages/MyAccount'
+import Mylist from './pages/Mylist'
+import MyOrder from './pages/Myorder'
 function App() {
 
 
@@ -32,7 +34,11 @@ function App() {
      <Route path={"/cart"} exact={true} element={<CartPage/>}/>
      <Route path={"/otp"} exact={true} element={<OtpPage/>}/>
       <Route path={"/billingdetails"} exact={true} element={<BillingDetailsPage/>}/>
-       <Route path={"/myaccount"} exact={true} element={<MyAccount/>}/>
+       {/* <Route path={"/myaccount"} exact={true} element={<MyAccount/>}/> */}
+         <Route path={"/myprofile"} exact={true} element={<MyAccount/>}/>
+          <Route path={"/mylist"} exact={true} element={<Mylist/>}/>
+         
+           <Route path={"/myorders"} exact={true} element={<MyOrder/>}/>
 </Routes>
 <Footer/>
 </BrowserRouter>
